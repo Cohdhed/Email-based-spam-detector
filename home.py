@@ -31,9 +31,9 @@ def main():
 
             # Display the result
             if prediction == 1:
-                st.write("The text is classified as: **Spam**")
+                st.write("The email is classified as: **Spam**")
             else:
-                st.write("The text is classified as: **Not Spam**")
+                st.write("The email is classified as: **Not Spam**")
         else:
             st.write("Please enter some text to classify.")
 
