@@ -31,9 +31,9 @@ def main():
 
             # Display the result
             if prediction == 1:
-                st.markdown('<p style="color:red;">The email is classified as: <strong>Spam</strong></p>', unsafe_allow_html=True)
+                st.markdown('The email is classified as: <span style="color:red;"><strong>Spam</strong></span>', unsafe_allow_html=True)
             else:
-                st.markdown('<p style="color:green;">The email is classified as: <strong>Not Spam</strong></p>', unsafe_allow_html=True)
+                st.markdown('The email is classified as: <span style="color:green;"><strong>Not Spam</strong></span>', unsafe_allow_html=True)
         else:
             st.write("Please enter some text to classify.")
 
