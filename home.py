@@ -16,7 +16,7 @@ def main():
     #st.write("Enter the email you got to classify it as spam or not spam.")
 
     # Text input
-    user_input = st.text_area("Paste text here:",  height=250)
+    user_input = st.text_area("Paste text here:", height=250)
 
     if st.button("Classify"):
         if user_input:
@@ -31,9 +31,9 @@ def main():
 
             # Display the result
             if prediction == 1:
-                st.write("The email is classified as: **Spam**")
+                st.markdown('<p style="color:red;">The email is classified as: <strong>Spam</strong></p>', unsafe_allow_html=True)
             else:
-                st.write("The email is classified as: **Not Spam**")
+                st.markdown('<p style="color:green;">The email is classified as: <strong>Not Spam</strong></p>', unsafe_allow_html=True)
         else:
             st.write("Please enter some text to classify.")
 
