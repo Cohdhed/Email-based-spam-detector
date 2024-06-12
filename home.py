@@ -16,7 +16,7 @@ def main():
     #st.write("Enter the email you got to classify it as spam or not spam.")
 
     # Text input
-    user_input = st.text_area("Paste text here:")
+    user_input = st.text_area("Paste text here:",  height=250)
 
     if st.button("Classify"):
         if user_input:
